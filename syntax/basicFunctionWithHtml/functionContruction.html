@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <script>
+        var func = new Function ("a", "b", "return a - b");
+        function secondFunction() {
+            var result;
+            result = func(50, 50);
+            document.write(result)
+        }
+    </script>
+
+<body>
+    <p>Click button to call the function</p>
+    <form>
+        <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+    <p>User different parameter inside the function and try yourself...</p>
+</body>
+</html>
